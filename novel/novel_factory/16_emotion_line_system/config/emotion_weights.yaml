@@ -1,0 +1,55 @@
+emotion_weights:
+  # 综合评分权重
+  final_score:
+    wave_intensity: 0.30     # 情绪波动强度
+    conflict_intensity: 0.30  # 情绪冲突强度
+    release_intensity: 0.20  # 情绪释放强度
+    empathy_level: 0.20      # 情绪代入感
+
+  # 情绪维度权重
+  emotion_dimensions:
+    fear:
+      weight: 0.10
+      range: [0, 100]
+    anger:
+      weight: 0.20
+      range: [0, 100]
+    depression:
+      weight: 0.15
+      range: [0, 100]
+    excitement:
+      weight: 0.15
+      range: [0, 100]
+    calm:
+      weight: 0.10
+      range: [0, 100]
+    despair:
+      weight: 0.10
+      range: [0, 100]
+    control:
+      weight: 0.20
+      range: [0, 100]
+
+  # 情绪阶段阈值
+  emotion_tiers:
+    suppressed:
+      range: [0, 20]
+      description: 极度压抑，憋屈待爆发
+    accumulating:
+      range: [20, 40]
+      description: 愤怒积累，持续压情绪
+    erupting:
+      range: [40, 60]
+      description: 情绪爆发，爽点出现
+    controlling:
+      range: [60, 80]
+      description: 掌控感，快感持续
+    peak:
+      range: [80, 100]
+      description: 巅峰爽感，爆款章节
+
+  # 情绪波动检测阈值
+  wave_detection:
+    min_wave_per_chapter: 15   # 每章最小情绪波动
+    max_suppressed_chapters: 50 # 最大压抑章节数
+    max_pleasure_chapters: 20  # 最大爽感章节数

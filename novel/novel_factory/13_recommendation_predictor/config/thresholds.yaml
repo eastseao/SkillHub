@@ -1,0 +1,49 @@
+thresholds:
+  # 推荐池跃迁
+  pool_transition:
+    cold_to_small:
+      ctr: 15
+      hook: 60
+    small_to_medium:
+      retention: 50
+      ctr: 20
+    medium_to_explosion:
+      rage: 80
+      follow_rate: 40
+
+  # 死亡判定
+  death_line:
+    ctr: 10
+    retention: 35
+    hook: 40
+    rage: 30
+
+  # 爆款条件
+  explosion_pool:
+    rage: 80
+    follow_rate: 40
+    ctr: 25
+
+  # 留存率换算
+  retention_mapping:
+    excellent: 75
+    good: 65
+    average: 55
+    poor: 45
+    dead: 35
+
+  # 爽点密度
+  rage_density:
+    explosion: 1000   # 每X字一个爆点 = 爆款
+    good: 2000
+    average: 3000
+    poor: 5000
+
+  # 评分等级
+  tier_thresholds:
+    S: 90
+    A: 80
+    B_plus: 75
+    B: 65
+    C: 50
+    D: 0

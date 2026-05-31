@@ -1,0 +1,52 @@
+rewrite_rules:
+  # 基本原则
+  basic_rules:
+    - 不得改变主线剧情
+    - 不得改变关键事件
+    - 不得改变角色核心设定
+    - 可以增加细节和冲突
+
+  # 必须增强项
+  must_enhance:
+    - 开头3秒钩子
+    - 冲突密度
+    - 情绪峰值
+    - 结尾悬念
+    - 爽点强度
+
+  # 必须删减项
+  must_reduce:
+    - 环境描写
+    - 内心独白（不推动剧情的）
+    - 闲聊对话
+    - 背景介绍（非关键的）
+    - 过渡段落
+
+  # 改写优先级
+  priority:
+    high:
+      - 开头钩子强化
+      - 结尾悬念增强
+      - 冲突密度提升
+    medium:
+      - 情绪峰值构建
+      - 节奏优化
+      - 对话锐化
+    low:
+      - 场景重构
+      - 传播潜力提升
+
+  # 目标评分
+  target_scores:
+    ctr: 85
+    retention: 85
+    rage: 90
+    hook: 90
+    title: 80
+
+  # 改写后预期提升
+  expected_improvement:
+    ctr: 15-30
+    retention: 10-25
+    rage: 20-40
+    hook: 20-30

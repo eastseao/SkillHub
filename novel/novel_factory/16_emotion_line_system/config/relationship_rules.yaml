@@ -1,0 +1,79 @@
+relationship_rules:
+  # 关系类型权重
+  relationship_types:
+    亲情:
+      emotion_volatility: 0.3   # 情绪波动
+      trust_change_speed: 0.1   # 信任变化速度
+      conflict_frequency: 0.2    # 冲突频率
+      arc_length: "长"          # 弧线长度
+    师徒:
+      emotion_volatility: 0.4
+      trust_change_speed: 0.2
+      conflict_frequency: 0.3
+      arc_length: "中长"
+    爱情:
+      emotion_volatility: 0.8
+      trust_change_speed: 0.5
+      conflict_frequency: 0.7
+      arc_length: "中"
+    敌对:
+      emotion_volatility: 0.9
+      trust_change_speed: 0.1
+      conflict_frequency: 1.0
+      arc_length: "短"
+    利益:
+      emotion_volatility: 0.6
+      trust_change_speed: 0.4
+      conflict_frequency: 0.5
+      arc_length: "中"
+
+  # 关系变化规则
+  change_rules:
+    # 爱情线规则
+    romance:
+      - 每3-5章必须有关系变化
+      - 小冲突每章可以有
+      - 大危机每50-100章一次
+      - 情绪最高点必须是表白/在一起
+      - 分手后必须有和解/升华
+
+    # 敌对线规则
+    rivalry:
+      - 敌对关系必须有明确的强弱转换
+      - 每50章至少一次碾压爽点
+      - 敌人必须越来越强
+      - 终极决战前必须有势均力敌阶段
+
+    # 师徒线规则
+    master:
+      - 师徒关系稳定但必须有考验
+      - 背叛是最高效的情绪催化剂
+      - 师父死亡/离开必须有强烈情绪铺垫
+
+  # 信任度规则
+  trust_rules:
+    max_trust_build_speed: 10     # 每章最大信任上升
+    max_trust_break_speed: 50     # 背叛时最大信任下跌
+    betrayal_recovery_min: 100     # 背叛后恢复信任最少章节数
+
+  # 依附度规则
+  attachment_rules:
+    attachment_levels:
+      路人:
+        chapters_needed: 0
+        key_events_needed: 0
+      好感:
+        chapters_needed: 10
+        key_events_needed: 1
+      心疼:
+        chapters_needed: 30
+        key_events_needed: 3
+      死忠:
+        chapters_needed: 50
+        key_events_needed: 5
+
+  # 冲突值规则
+  conflict_rules:
+    max_conflict_per_chapter: 2    # 每章最大冲突数
+    conflict_cooldown: 5           # 冲突后冷却章节数
+    major_conflict_interval: 50    # 大冲突最小间隔

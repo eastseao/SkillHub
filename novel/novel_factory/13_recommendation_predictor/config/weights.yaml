@@ -1,0 +1,72 @@
+weights:
+  final_score:
+    ctr: 0.25
+    retention: 0.25
+    hook: 0.20
+    rage: 0.20
+    title: 0.10
+
+  ctr_breakdown:
+    title_impact: 30
+    hook_strength: 30
+    emotion_stimulus: 20
+    info_density: 20
+
+  retention_breakdown:
+    opening_attraction: 30
+    conflict_density: 30
+    info_delay: 20
+    emotion_wave: 20
+
+  hook_breakdown:
+    interest_conflict: 15
+    danger_signal: 10
+    cognitive_conflict: 15
+    first_sentence: 20
+    reversal: 15
+    number_impact: 10
+    suspense: 15
+
+  rage_breakdown:
+    slap_face: 25
+    reversal: 25
+    power_crushing: 20
+    resource_gain: 15
+    emotion_release: 15
+
+  title_breakdown:
+    number_impact: 25
+    emotion_stimulus: 25
+    suspense_hook: 25
+    benefit_clear: 25
+
+# 流量层级权重
+traffic_tiers:
+  S:
+    min: 90
+    min_hook: 90
+    min_ctr: 85
+    min_rage: 85
+    min_retention: 80
+  A:
+    min: 80
+    min_hook: 75
+    min_ctr: 75
+    min_rage: 75
+    min_retention: 70
+  B_plus:
+    min: 75
+    min_hook: 65
+    min_ctr: 70
+    min_rage: 65
+    min_retention: 65
+  B:
+    min: 65
+    min_hook: 55
+    min_ctr: 60
+    min_rage: 55
+    min_retention: 55
+  C:
+    min: 50
+  D:
+    max: 50

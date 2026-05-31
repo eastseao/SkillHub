@@ -1,0 +1,64 @@
+ctr_weights:
+  # CTR综合评分权重
+  final_score:
+    conflict: 0.30
+    emotion: 0.25
+    curiosity_gap: 0.25
+    novelty: 0.20
+
+  # 冲突强度子维度
+  conflict:
+    max_score: 30
+    sub_weights:
+      power_conflict: 0.40  # 权力冲突
+      identity_conflict: 0.30  # 身份冲突
+      life_death: 0.30  # 生死冲突
+
+  # 情绪刺激子维度
+  emotion:
+    max_score: 25
+    sub_weights:
+      slap_face: 0.35  # 打脸
+      reversal: 0.30  # 逆袭
+      power_crush: 0.20  # 权力碾压
+      forbidden: 0.15  # 禁忌
+
+  # 信息缺口子维度
+  curiosity_gap:
+    max_score: 25
+    sub_weights:
+      result_unknown: 0.40  # 结果未知
+      reason_unknown: 0.30  # 原因未知
+      identity_unknown: 0.30  # 身份未知
+
+  # 新奇程度子维度
+  novelty:
+    max_score: 20
+    sub_weights:
+      anti_cliche: 0.50  # 反套路
+      specific_detail: 0.30  # 具体化
+      time_compression: 0.20  # 时间压缩
+
+  # CTR评级阈值
+  ctr_tiers:
+    S:
+      min: 90
+      action: 强烈推荐
+    A:
+      min: 80
+      action: 推荐
+    B:
+      min: 70
+      action: 可用
+    C:
+      min: 60
+      action: 建议优化
+    D:
+      min: 0
+      action: 不推荐
+
+  # 提升预期
+  improvement_expectation:
+    min_titles: 10
+    expected_top_score: 85
+    expected_average: 70

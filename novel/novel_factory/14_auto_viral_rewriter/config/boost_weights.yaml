@@ -1,0 +1,67 @@
+boost_weights:
+  # 各维度提升权重
+  dimension_boost:
+    ctr:
+      weight: 0.25
+      boost_methods:
+        - 标题优化
+        - 开头钩子强化
+        - 情绪刺激增强
+      expected_boost: 15-30
+
+    retention:
+      weight: 0.25
+      boost_methods:
+        - 冲突密度提升
+        - 节奏优化
+        - 信息延迟策略
+      expected_boost: 10-25
+
+    rage:
+      weight: 0.20
+      boost_methods:
+        - 打脸增强
+        - 逆袭增强
+        - 权力反转增强
+      expected_boost: 20-40
+
+    hook:
+      weight: 0.20
+      boost_methods:
+        - 开头钩子强化
+        - 结尾悬念增强
+      expected_boost: 20-30
+
+    title:
+      weight: 0.10
+      boost_methods:
+        - 标题优化
+        - 数字冲击增强
+      expected_boost: 10-20
+
+  # 改写方法权重
+  method_weights:
+    hook_enhancement: 0.20
+    conflict_amplification: 0.20
+    pacing_optimization: 0.15
+    emotional_peak_building: 0.15
+    scene_restructuring: 0.10
+    boring_section_killing: 0.10
+    dialogue_sharpening: 0.05
+    ending_cliffhanger_boost: 0.05
+
+  # 提升效果预估
+  improvement_estimate:
+    original_score_range: [60, 75]
+    target_score_range: [85, 95]
+    max_improvement: 30
+    average_improvement: 22
+
+  # 改写后评分预测
+  predicted_scores_after_rewrite:
+    ctr: 85-95
+    retention: 85-95
+    rage: 90-98
+    hook: 90-98
+    title: 80-90
+    final_score: 85-95

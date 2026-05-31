@@ -1,0 +1,71 @@
+fanqie:
+  name: 番茄小说
+  algorithm_version: "2024"
+
+  # 4阶段推荐池
+  pools:
+    cold_start:
+      exposure_range: [500, 2000]
+      duration_hours: 24
+      success_condition:
+        ctr: 15
+        hook: 60
+      fail_condition:
+        ctr: 10
+
+    small_traffic:
+      exposure_range: [10000, 50000]
+      duration_hours: 72
+      success_condition:
+        retention: 40
+        ctr: 20
+      fail_condition:
+        retention: 35
+
+    medium_traffic:
+      exposure_range: [100000, 500000]
+      duration_hours: 168
+      success_condition:
+        follow_rate: 30
+        retention: 55
+      fail_condition:
+        follow_rate: 20
+
+    explosion_pool:
+      exposure_min: 1000000
+      duration_days: 30
+      success_condition:
+        rage_score: 80
+        follow_rate: 40
+      fail_condition:
+        rage_score: 60
+
+  # 用户行为路径
+  user_behavior:
+    click_to_3s: 100  # 点击后3秒判断留存
+    continue_to_read: 60  # 继续读
+    skip_rate: 40  # 跳读率
+    follow_rate: 30  # 追更率
+
+  # 推荐算法权重
+  algorithm_weights:
+    ctr: 0.35
+    retention: 0.30
+    follow_rate: 0.20
+    rage_score: 0.15
+
+  # 爆款特征
+  explosion_features:
+    - 前3秒有冲突
+    - 每2000字一个爽点
+    - 情绪持续波动
+    - 有明确对立关系
+    - 打脸/逆袭/碾压
+
+  # 死亡特征
+  death_features:
+    - 无冲突开局
+    - 信息铺垫过长
+    - 无情绪释放点
+    - 标题无吸引力
+    - 开头3秒无钩子
