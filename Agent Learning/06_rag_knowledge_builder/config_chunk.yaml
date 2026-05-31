@@ -1,0 +1,9 @@
+chunk:
+  size: 800
+  overlap: 150
+
+rerank:
+  enabled: true
+
+embedding:
+  model: text-embedding-3-large

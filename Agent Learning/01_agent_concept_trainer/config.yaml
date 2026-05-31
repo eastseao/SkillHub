@@ -1,0 +1,18 @@
+name: AgentConceptTrainer
+version: 1.0
+category: learning
+memory: true
+reflection: true
+planning: true
+output:
+  structured: true
+  markdown: true
+learning_modules:
+  - agent_basics
+  - workflow
+  - memory
+  - rag
+  - tool_use
+  - planning
+  - reflection
+  - multi_agent

@@ -1,0 +1,14 @@
+user:
+  name:
+  preferred_language: zh-CN
+  learning_style:
+  interests: []
+  goals: []
+  projects: []
+  skills_level:
+    prompt_engineering: beginner
+    memory: beginner
+    tool_use: beginner
+    workflow: beginner
+    rag: beginner
+    multi_agent: beginner
