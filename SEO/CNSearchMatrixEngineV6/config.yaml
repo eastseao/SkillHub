@@ -1,0 +1,36 @@
+system:
+  language: zh-CN
+  output_format: markdown
+  reasoning: deep
+  creativity: high
+  temperature: 0.9
+
+seo:
+  enable_baidu_seo: true
+  enable_longtail_keywords: true
+  enable_internal_linking: true
+  enable_featured_snippet: true
+
+geo:
+  enable_ai_search: true
+  enable_entity_definition: true
+  enable_ai_summary_block: true
+  enable_tldr: true
+
+platform:
+  enable_wechat: true
+  enable_xiaohongshu: true
+  enable_zhihu: true
+  enable_douyin: true
+  enable_baijiahao: true
+
+content:
+  enable_auto_rewriting: true
+  enable_deaify: true
+  enable_content_scoring: true
+  enable_conversion_path: true
+
+analysis:
+  enable_serp_analysis: true
+  enable_competitor_analysis: true
+  enable_trend_analysis: true
