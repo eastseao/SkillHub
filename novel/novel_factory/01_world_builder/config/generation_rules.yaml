@@ -1,0 +1,16 @@
+world_rules:
+  minimum_regions: 5
+  minimum_civilizations: 3
+  minimum_history_years: 3000
+
+story_support:
+  support_long_novel: true
+  support_power_growth: true
+  support_map_upgrade: true
+
+required_elements:
+  - hidden_truth
+  - forbidden_zone
+  - lost_civilization
+  - world_conflict
+  - resource_competition

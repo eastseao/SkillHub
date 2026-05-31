@@ -1,0 +1,31 @@
+anti_power_creep:
+  prevent_infinite_growth: true
+  prevent_invincible_protagonist: true
+  maintain_character_relevance: true
+
+上限设定:
+  - 世界力量上限：必须设定
+  - 境界上限：必须存在
+  - 寿命上限：必须存在
+
+高境界代价:
+  - 突破代价：资源+风险
+  - 维持代价：消耗+压制
+  - 进阶代价：必须舍弃某些东西
+
+资源稀缺:
+  - 顶级资源：必须有主
+  - 获取难度：必须足够大
+  - 争夺理由：必须充分
+
+越级限制:
+  - 大境界差距：不可逾越
+  - 需要特殊条件才能越级
+  - 血脉/技能/装备可以创造条件
+
+late_game_balance:
+  maintain_old_character_value: true
+  prevent_numeric_explosion: true
+  reserve_higher_worlds: true
+  reserve_hidden_realms: true
+  reserve_unknown_laws: true

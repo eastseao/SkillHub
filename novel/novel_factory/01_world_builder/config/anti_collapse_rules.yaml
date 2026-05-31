@@ -1,0 +1,11 @@
+anti_collapse:
+  prevent_power_creep: true
+  prevent_world_shrink: true
+  prevent_setting_conflict: true
+  prevent_repetitive_regions: true
+
+long_novel_support:
+  reserve_hidden_worlds: true
+  reserve_higher_dimensions: true
+  reserve_ancient_mysteries: true
+  reserve_god_level_entities: true

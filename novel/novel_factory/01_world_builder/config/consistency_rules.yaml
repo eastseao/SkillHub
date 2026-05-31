@@ -1,0 +1,13 @@
+consistency_rules:
+  - timeline_consistency
+  - civilization_consistency
+  - geography_consistency
+  - political_consistency
+  - economy_consistency
+
+forbidden:
+  - contradictory_history
+  - impossible_geography
+  - inconsistent_technology
+  - anachronistic_culture
+  - impossible_economy

@@ -1,0 +1,25 @@
+character_rules:
+  protagonist_required: true
+  villain_required: true
+  heroine_required: true
+  supporting_roles_required: true
+
+growth_system:
+  support_long_growth: true
+  support_emotional_change: true
+  support_relationship_change: true
+  support_personality_evolution: true
+
+required_elements:
+  - core_desire
+  - fatal_flaw
+  - growth_arc
+  - emotional_trigger
+  - social_relationships
+  - dialogue_style
+  - personality_lock
+
+anti_ooc:
+  enforce_personality_lock: true
+  enforce_dialogue_consistency: true
+  enforce_behavior_logic: true

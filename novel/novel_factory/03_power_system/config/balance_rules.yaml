@@ -1,0 +1,28 @@
+balance_rules:
+  prevent_power_creep: true
+  prevent_invincible_mc: true
+  maintain_resource_scarcity: true
+  prevent_numeric_explosion: true
+
+realm_balance:
+  - 高境界碾压低境界必须有代价
+  - 越级战斗必须有条件
+  - 境界压制必须有效
+
+combat_balance:
+  - 技能必须有克制关系
+  - 属性必须有相克
+  - 地形必须影响战斗
+  - 环境必须有意义
+
+resource_balance:
+  - 资源必须稀缺
+  - 顶级资源必须有主
+  - 资源争夺必须有理由
+
+hard_limits:
+  - realm_gap_matters
+  - higher_power_requires_cost
+  - forbidden_power_has_consequences
+  - world_power_ceiling_exists
+  - lifespan_has_limits

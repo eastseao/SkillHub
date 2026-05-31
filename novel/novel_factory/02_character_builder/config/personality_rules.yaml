@@ -1,0 +1,30 @@
+personality_rules:
+  maintain_consistency: true
+  maintain_dialogue_style: true
+  maintain_behavior_pattern: true
+  prevent_random_change: true
+
+personality_components:
+  - core_personality
+  - hidden_personality
+  - public_persona
+  - private_self
+
+dialogue_rules:
+  - character_must_have_unique_voice
+  - dialogue_must_match_emotional_state
+  - background_must_affect_speech
+  - status_must_affect_diction
+
+behavior_rules:
+  - behavior_must_have_motivation
+  - behavior_must_match_personality
+  - behavior_must_follow_growth_stage
+  - behavior_must_respect_relationships
+
+forbidden:
+  - random_personality_change
+  - irrational_behavior
+  - inconsistent_dialogue
+  - out_of_character_decisions
+  - sudden_value_shifts

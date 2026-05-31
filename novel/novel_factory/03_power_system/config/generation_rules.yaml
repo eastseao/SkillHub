@@ -1,0 +1,25 @@
+power_system:
+  minimum_realms: 8
+  support_long_growth: true
+  support_multi_worlds: true
+
+realm_hierarchy:
+  - 境界数量 ≥ 8
+  - 每个境界必须有质变
+  - 境界之间必须有明确压制
+
+growth_limits:
+  - 成长必须有代价
+  - 资源必须有稀缺
+  - 突破必须有条件
+
+required_elements:
+  - power_source
+  - realm_system
+  - combat_rules
+  - skill_system
+  - equipment_system
+  - bloodline_system
+  - monster_system
+  - resource_system
+  - limitations

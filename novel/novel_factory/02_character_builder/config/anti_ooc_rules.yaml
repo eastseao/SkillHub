@@ -1,0 +1,33 @@
+anti_ooc:
+  prevent_personality_drift: true
+  prevent_random_emotion: true
+  prevent_dialogue_collapse: true
+  prevent_motivation_contradiction: true
+
+checklist:
+  - core_values_immutable
+  - behavior_must_match_personality
+  - emotions_require_triggers
+  - dialogue_requires_context
+  - decisions_require_history
+  - relationships_require_memory
+
+hard_rules:
+  - never_change_core_desire
+  - never_contradict_stated_motivation
+  - never_break_personality_lock
+  - never_violate_dialogue_style
+  - never_ignore_relationship_history
+
+warning_signs:
+  - character_acting_without_motivation
+  - dialogue_style_suddenly_changing
+  - emotional_response_inconsistent
+  - decision_contradicts_history
+  - relationship_behavior_unpredictable
+
+recovery:
+  - revert_to_last_consistent_state
+  - find_last_known_normal_behavior
+  - regenerate_transition_sequence
+  - validate_against_personality_lock

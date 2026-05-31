@@ -1,0 +1,36 @@
+relationship_rules:
+  - all_relationships_must_have_history
+  - all_relationships_must_have_evolution_path
+  - all_relationships_must_have_core_conflict
+  - all_relationships_must_support_growth
+
+relationship_types:
+  - allies
+  - enemies
+  - rivals
+  - mentors
+  - romantics
+  - family
+  - subordinates
+  - rivals_become_allies
+  - allies_become_enemies
+
+evolution_system:
+  - support_gradual_change
+  - support_sudden_shift_with_justification
+  - support_relationship_tension
+  - support_relationship_resolution
+
+memory_tracking:
+  - track_favor
+  - track_debt
+  - track_resentment
+  - track_trust
+  - track_secrets_shared
+
+forbidden:
+  - instant_relationship_transformation
+  - relationship_without_history
+  - relationship_without_conflict
+  - one_sided_loyalty
+  - unmotivated_hatred
