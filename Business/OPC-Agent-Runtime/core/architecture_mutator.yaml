@@ -1,0 +1,11 @@
+architecture_mutator:
+
+  function: modify_system_topology
+
+  actions:
+
+    - add_agent
+    - remove_agent
+    - merge_agents
+    - split_agents
+    - rewire_workflows

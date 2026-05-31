@@ -1,0 +1,16 @@
+system:
+  mode: self_evolving_runtime
+
+  evolution:
+    enabled: true
+    cycle_interval: per_execution
+    mutation_threshold: 0.7
+
+  safety:
+    allow_architecture_change: true
+    allow_agent_creation: true
+    allow_agent_removal: true
+
+  constraints:
+    prevent_loop_instability: true
+    preserve_core_engine: true

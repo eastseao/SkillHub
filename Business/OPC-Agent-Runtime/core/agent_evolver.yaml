@@ -1,0 +1,11 @@
+agent_evolver:
+
+  function: evolve_agent_definition
+
+  inputs:
+    - agent_performance
+    - task_success_rate
+
+  outputs:
+    - improved_agent_spec
+    - replaced_agent_version

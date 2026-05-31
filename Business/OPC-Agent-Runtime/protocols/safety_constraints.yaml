@@ -1,0 +1,10 @@
+safety_constraints:
+
+  rules:
+
+    - preserve_system_stability
+    - ensure_execution_traceability
+    - avoid_infinite_evolution_loops
+
+  fallback:
+    - revert_to_previous_stable_version

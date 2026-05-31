@@ -1,0 +1,11 @@
+skill_generator:
+
+  function: generate_new_agent_skills
+
+  inputs:
+    - detected_gaps
+    - performance_requirements
+
+  outputs:
+    - new_skill_definitions
+    - agent_capability_extensions

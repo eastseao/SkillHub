@@ -1,0 +1,8 @@
+performance_memory:
+
+  tracks:
+
+    - agent_efficiency
+    - workflow_success_rate
+    - system_latency
+    - output_quality_scores

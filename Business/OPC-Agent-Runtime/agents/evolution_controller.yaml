@@ -1,0 +1,20 @@
+agent:
+  name: EVOLUTION_CONTROLLER
+
+role: system_evolution_orchestrator
+
+responsibility:
+
+  - trigger_reflection
+  - evaluate_system_state
+  - initiate_mutation_cycles
+
+trigger_conditions:
+  - performance_below_threshold
+  - repeated_execution_failures
+  - user_initiated_evolution_request
+
+output:
+  - evolution_plan
+  - mutation_commands
+  - system_restart_commands

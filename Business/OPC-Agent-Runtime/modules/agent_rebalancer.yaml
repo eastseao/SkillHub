@@ -1,0 +1,9 @@
+agent_rebalancer:
+
+  function: rebalance_agent_workload
+
+  actions:
+
+    - redistribute_tasks
+    - scale_agent_capacity
+    - reassign_roles_based_on_load

@@ -1,0 +1,14 @@
+evolution_protocol:
+
+  trigger_conditions:
+
+    - performance_score < threshold
+    - repeated_task_failure
+    - inefficiency_detected
+
+  actions:
+
+    - analyze_system
+    - propose_changes
+    - simulate_mutation
+    - apply_update

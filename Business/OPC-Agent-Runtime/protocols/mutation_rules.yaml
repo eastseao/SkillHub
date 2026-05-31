@@ -1,0 +1,12 @@
+mutation_rules:
+
+  allowed_changes:
+
+    - agent_addition
+    - agent_removal
+    - workflow_restructuring
+
+  forbidden_changes:
+
+    - delete_core_runtime_engine
+    - break_execution_loop

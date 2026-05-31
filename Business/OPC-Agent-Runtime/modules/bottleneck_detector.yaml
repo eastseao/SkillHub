@@ -1,0 +1,9 @@
+bottleneck_detector:
+
+  function: detect_system_inefficiencies
+
+  outputs:
+
+    - slow_agents
+    - overloaded_nodes
+    - broken_workflows

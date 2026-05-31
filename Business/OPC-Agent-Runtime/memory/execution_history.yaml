@@ -1,0 +1,7 @@
+execution_history:
+
+  stores:
+    - task_graphs
+    - execution_flows
+    - outputs
+    - scores

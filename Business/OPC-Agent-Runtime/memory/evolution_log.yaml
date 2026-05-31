@@ -1,0 +1,8 @@
+evolution_log:
+
+  records:
+
+    - architecture_changes
+    - agent_creations
+    - agent_deletions
+    - workflow_rewrites

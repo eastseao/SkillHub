@@ -1,0 +1,36 @@
+cycle:
+
+  step1:
+    component: execution_engine
+    action: run_tasks
+    output: task_results
+
+  step2:
+    component: performance_analyzer
+    action: evaluate
+    output: performance_report
+
+  step3:
+    component: bottleneck_detector
+    action: identify_issues
+    output: bottleneck_list
+
+  step4:
+    component: evolution_controller
+    action: trigger_reflection
+    output: reflection_analysis
+
+  step5:
+    component: architecture_mutator
+    action: apply_changes
+    output: new_architecture
+
+  step6:
+    component: system_restart
+    action: apply_new_version
+    output: evolved_system_state
+
+notes:
+  - cycle repeats indefinitely
+  - each iteration improves system performance
+  - evolution logs track all changes

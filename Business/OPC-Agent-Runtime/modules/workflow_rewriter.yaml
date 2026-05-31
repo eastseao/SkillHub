@@ -1,0 +1,9 @@
+workflow_rewriter:
+
+  function: optimize_execution_flow
+
+  actions:
+
+    - reorder_steps
+    - remove_redundant_stages
+    - parallelize_tasks

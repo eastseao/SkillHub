@@ -1,0 +1,9 @@
+performance_analyzer:
+
+  function: evaluate_system_efficiency
+
+  metrics:
+
+    - task_success_rate
+    - execution_time
+    - output_quality

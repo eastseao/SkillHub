@@ -1,0 +1,19 @@
+agent:
+  name: SYSTEM_AUDITOR
+
+role: system_quality_checker
+
+tasks:
+
+  - analyze performance logs
+  - detect inefficiencies
+  - validate system_integrity
+  - audit_agent_effectiveness
+
+metrics_tracked:
+  - task_success_rate
+  - execution_latency
+  - resource_utilization
+  - output_quality_scores
+
+trigger: triggered_by_evolution_controller_or_scheduled

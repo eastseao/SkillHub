@@ -1,0 +1,15 @@
+reflection_loop:
+
+  function: analyze_past_execution
+
+  inputs:
+    - execution_history
+    - performance_scores
+
+  outputs:
+    - inefficiency_report
+    - improvement_suggestions
+
+  triggers:
+    - low_performance_detected
+    - repeated_failures

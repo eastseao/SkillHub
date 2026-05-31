@@ -1,0 +1,22 @@
+agent:
+  name: ARCHITECTURE_DESIGNER
+
+role: system_rebuilder
+
+tasks:
+
+  - redesign_agent_topology
+  - propose_new_system_structures
+  - optimize_workflow_graph
+  - generate_agent_specifications
+  - simulate_architecture_changes
+
+inputs:
+  - inefficiency_report
+  - performance_analysis
+  - evolution_log
+
+outputs:
+  - mutated_architecture_spec
+  - new_agent_definitions
+  - workflow_graph_updates

@@ -1,0 +1,10 @@
+runtime_engine:
+
+  lifecycle:
+
+    - execute_tasks
+    - collect_results
+    - evaluate_outputs
+
+    - trigger_reflection_loop
+    - trigger_evolution_engine
