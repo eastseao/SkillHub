@@ -1,0 +1,25 @@
+pacing:
+  early_fast: true
+  mid_build_up: true
+  late_explosion: true
+
+节奏模型:
+  初期: 快速建冲突，3章内出爆点
+  中期: 稳步升级，每50章大高潮
+  后期: 持续爆发，冲突不断
+
+爽点递增:
+  初期: 1-2个小爽点/章
+  中期: 2-3个爽点/章
+  后期: 3-4个爽点/章
+
+冲突递增:
+  初期: 个人冲突
+  中期: 势力冲突
+  后期: 世界冲突
+
+forbidden:
+  - flat_storyline（平缓无变化）
+  - repetitive_conflict（重复冲突）
+  - filler_chapters（灌水章节）
+  - static_world（静止世界）

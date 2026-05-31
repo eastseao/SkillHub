@@ -1,0 +1,18 @@
+master_plot:
+  min_arcs: 5
+  max_arcs: 20
+  require_global_conflict: true
+  support_1000_chapters: true
+
+rules:
+  must_have_main_line: true
+  must_have_progression: true
+  must_have_climax: true
+  must_have_foreshadowing: true
+  must_have_world_expansion: true
+
+structure:
+  - 主线贯穿全局
+  - Arc递进结构
+  - 伏笔跨章回收
+  - 冲突持续升级

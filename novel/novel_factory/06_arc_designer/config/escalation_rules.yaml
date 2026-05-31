@@ -1,0 +1,25 @@
+escalation_rules:
+  enemy_strength:
+    初期Arc: 指数1x
+    中期Arc: 指数2x-5x
+    后期Arc: 指数10x-100x
+
+  world_scope:
+    初期Arc: 局部（县城/宗门）
+    中期Arc: 区域（州/帝国）
+    后期Arc: 世界（大陆/多界）
+
+  conflict_scale:
+    初期Arc: 个人矛盾
+    中期Arc: 势力战争
+    后期Arc: 帝国/天下对决
+
+  reward_scale:
+    初期Arc: 入门级
+    中期Arc: 稀有级
+    后期Arc: 禁忌级
+
+escalation_pattern:
+  - 每一Arc敌人比上一Arc强至少30%
+  - 每一Arc世界范围扩大至少50%
+  - 每一Arc奖励提升至少一个档次

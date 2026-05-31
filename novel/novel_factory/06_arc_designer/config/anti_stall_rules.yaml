@@ -1,0 +1,21 @@
+anti_stall:
+  prevent_filler_arc: true
+  enforce_arc_goal: true
+  enforce_climax: true
+  enforce_world_change: true
+
+hard_rules:
+  - every_arc_changes_world（每个Arc必须改变世界）
+  - every_arc_has_climax（每个Arc必须有高潮）
+  - every_arc_has_reward（每个Arc必须有奖励）
+  - no_static_arc（禁止静止Arc）
+
+arc_quality_check:
+  - [ ] Arc有明确目标？
+  - [ ] Arc有核心冲突？
+  - [ ] Arc有Boss？
+  - [ ] Arc有高潮？
+  - [ ] Arc有奖励？
+  - [ ] Arc改变世界？
+  - [ ] Arc推动角色成长？
+  - [ ] Arc服务主线？

@@ -1,0 +1,20 @@
+pacing:
+  arc_structure:
+    前期: 快速建冲突，3章内出爆点
+    中期: 稳步升级，每10章小高潮
+    后期: 持续爆发，每5章大爽点
+
+climax_density:
+  初期Arc: 每20章1个大高潮
+  中期Arc: 每10章1个大高潮
+  后期Arc: 每5章1个大高潮
+
+conflict_escalation:
+  初期Arc: 个人冲突为主
+  中期Arc: 势力冲突为主
+  后期Arc: 世界冲突为主
+
+forbidden:
+  - flat_arc（平淡Arc）
+  - no_climax_arc（无高潮Arc）
+  - slow_start_arc（开局拖沓）

@@ -1,0 +1,20 @@
+arc_system:
+  min_chapters: 30
+  max_chapters: 200
+  require_boss: true
+  require_climax: true
+  require_reward: true
+  require_world_change: true
+
+rules:
+  must_progress_world: true
+  must_progress_character: true
+  must_progress_conflict: true
+  must_have_goal: true
+  must_have_hook: true
+
+forbidden:
+  - no_progress_arc（无推进Arc）
+  - static_world_arc（静止世界Arc）
+  - repetitive_arc_structure（重复结构）
+  - filler_arc（灌水Arc）

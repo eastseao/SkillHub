@@ -1,0 +1,25 @@
+conflict_rules:
+  require_progression: true
+  require_escalation: true
+  allow_multi_front: true
+
+conflict_types:
+  - 个人冲突（羞辱/复仇）
+  - 势力冲突（宗门/国家）
+  - 世界冲突（位面/天道）
+
+升级路径:
+  - 小冲突 → 大冲突
+  - 地方冲突 → 区域冲突
+  - 区域冲突 → 国家冲突
+  - 国家冲突 → 世界冲突
+
+conflict_density:
+  初期: 每10章1次大冲突
+  中期: 每5章1次大冲突
+  后期: 每3章1次大冲突
+
+forbidden:
+  - same_level_conflict_repeat（同级重复冲突）
+  - conflict_without_consequence（无后果冲突）
+  - meaningless_conflict（无意义冲突）

@@ -1,0 +1,27 @@
+faction_system:
+  minimum_factions: 5
+  require_hidden_factions: true
+  support_long_term_evolution: true
+
+rules:
+  must_have_economy: true
+  must_have_military: true
+  must_have_internal_conflict: true
+  must_have_external_enemy: true
+  must_have_expansion_path: true
+
+faction_types:
+  - empire
+  - sect
+  - guild
+  - hidden_org
+  - alliance
+  - corporation
+
+required_elements:
+  - power_structure
+  - economic_system
+  - military_force
+  - internal_conflict
+  - external_relationship
+  - secret

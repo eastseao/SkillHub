@@ -1,0 +1,21 @@
+balance_rules:
+  prevent_single_faction_dominance: true
+  maintain_power_balance: true
+  ensure_conflict_continuity: true
+
+internal_balance:
+  - 每个势力必须有内部矛盾
+  - 每个势力必须有经济弱点
+  - 每个势力必须有军事弱点
+  - 每个势力必须有政治危机点
+
+external_balance:
+  - 势力之间必须互相制衡
+  - 强大势力必须有强大敌人
+  - 弱小势力必须有生存空间
+  - 隐藏势力必须影响局势
+
+growth_limits:
+  - 势力扩张必须有代价
+  - 势力崛起必须有阻力
+  - 势力衰落必须有原因

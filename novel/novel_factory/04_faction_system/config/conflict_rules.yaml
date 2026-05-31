@@ -1,0 +1,31 @@
+conflict_rules:
+  require_long_term_conflict: true
+  allow_multi_front_war: true
+  allow_hidden_war: true
+  support_political_conflict: true
+  support_economic_war: true
+
+conflict_types:
+  - 资源争夺战
+  - 领土战争
+  - 经济封锁战
+  - 政治斗争
+  - 暗战/渗透
+  - 信仰战争
+
+conflict_triggers:
+  - 资源枯竭
+  - 领导更替
+  - 外敌入侵
+  - 经济危机
+  - 背叛
+
+conflict_escalation:
+  - 小摩擦 → 局部冲突 → 全面战争
+  - 经济战 → 政治战 → 军事战
+
+forbidden:
+  - instant_destruction（瞬间灭门）
+  - meaningless_war（无意义战争）
+  - unstoppable_victory（绝对碾压）
+  - permanent_alliance（永久联盟）

@@ -1,0 +1,27 @@
+anti_bloat:
+  prevent_stall: true
+  prevent_filler_chapters: true
+  enforce_progression: true
+  prevent_world_static: true
+
+hard_limits:
+  - every_arc_must_change_world_state
+  - no_static_world
+  - no_repetitive_enemies
+  - no_level_cap_break_without_cost
+
+剧情压力系统:
+  - 冲突密度随章节增长
+  - 敌人强度随章节增长
+  - 世界规模随章节扩展
+
+伏笔回收规则:
+  - 每50-100章必须回收伏笔
+  - 每个Arc回收1-2个旧伏笔
+  - 每个Arc埋设3-5个新伏笔
+  - 核心伏笔必须在大结局前回收
+
+世界升级规则:
+  - 每个Arc世界升级一次
+  - 地图必须持续扩展
+  - 敌人必须持续变强

@@ -1,0 +1,29 @@
+expansion:
+  allow_faction_split: true
+  allow_faction_merge: true
+  allow_faction_reform: true
+  allow_faction_conquest: true
+
+long_term_support:
+  maintain_power_balance: true
+  ensure_conflict_continuity: true
+  preserve_old_faction_value: true
+
+evolution_phases:
+  - 诞生期：势力初创
+  - 成长期：扩张阶段
+  - 巅峰期：最强盛时期
+  - 内斗期：内部矛盾爆发
+  - 衰落期：实力下降
+  - 崩溃/转型：分裂或改革
+
+hidden_faction_rules:
+  - 必须存在至少一个隐藏势力
+  - 隐藏势力必须影响主线
+  - 隐藏势力必须延迟揭露
+  - 揭露后必须有重大剧情影响
+
+world_expansion:
+  - 支持新地图新势力
+  - 支持跨世界势力
+  - 支持位面级势力
