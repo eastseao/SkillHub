@@ -1,0 +1,9 @@
+expansion:
+  auto_expand_if_short: true
+
+priority:
+  - dialogue
+  - emotion
+  - conflict
+  - world_reaction
+  - battle_detail

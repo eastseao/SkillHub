@@ -1,0 +1,31 @@
+pacing_rules:
+  early_arc:
+    description: 初期慢热
+    ratio:
+      slow: 0.6
+      medium: 0.3
+      fast: 0.1
+  middle_arc:
+    description: 中期平衡
+    ratio:
+      slow: 0.3
+      medium: 0.4
+      fast: 0.3
+  late_arc:
+    description: 后期爆发
+    ratio:
+      slow: 0.1
+      medium: 0.3
+      fast: 0.6
+
+快节奏触发:
+  - 战斗开始
+  - 身份揭露
+  - 重大冲突
+  - 情绪爆发
+
+慢节奏触发:
+  - 情感对话
+  - 过渡场景
+  - 世界观展示
+  - 伏笔铺垫

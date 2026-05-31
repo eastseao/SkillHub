@@ -1,0 +1,10 @@
+chapter:
+  pacing:
+    hook_ratio: 0.2
+    development_ratio: 0.6
+    climax_ratio: 0.2
+
+rules:
+  forbid_flat_pacing: true
+  require_tension_escalation: true
+  require_minor_climax: true

@@ -1,0 +1,26 @@
+contradiction_rules:
+  detect_power_conflict: true
+  detect_character_drift: true
+  detect_world_inconsistency: true
+  detect_timeline_break: true
+  detect_faction_contradiction: true
+
+severity_levels:
+  critical:
+    action: must_fix_immediately
+    description: 逻辑崩坏，会导致故事无法继续
+  high:
+    action: must_fix
+    description: 明显矛盾，影响阅读体验
+  medium:
+    action: warn_and_log
+    description: 轻微矛盾，可选择性修复
+  low:
+    action: log_only
+    description: 潜在问题，监控即可
+
+detection_triggers:
+  - on_chapter_write
+  - on_memory_update
+  - on_arc_complete
+  - manual_check

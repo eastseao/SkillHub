@@ -1,0 +1,29 @@
+retention_policy:
+  key_events:
+    keep_forever: true
+    scope:
+      - 角色死亡
+      - 势力覆灭
+      - 世界变化
+      - 境界突破
+      - 关系重大变化
+      - 伏笔揭露
+
+  minor_events:
+    keep_forever: false
+    compress_after_arc: true
+    scope:
+      - 小规模战斗
+      - 日常对话
+      - 过渡场景
+
+compression_triggers:
+  - after_arc_complete
+  - when_memory_exceeds_threshold
+  - on_demand
+
+keep_forever_rules:
+  - 因果链关键节点
+  - 角色核心设定
+  - 世界基本法则
+  - 伏笔

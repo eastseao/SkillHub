@@ -1,0 +1,9 @@
+chapter:
+  min_chinese_chars: 3500
+  max_chinese_chars: unlimited
+
+rules:
+  force_longform: true
+  forbid_short_chapter: true
+  require_hook: true
+  require_plot_progress: true

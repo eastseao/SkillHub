@@ -1,0 +1,26 @@
+tone:
+  default_tone: serious
+  allow_emotional_peaks: true
+  forbid_random_tone_shift: true
+
+tone_types:
+  黑暗压抑:
+    intensity: high
+    emotion_range: low
+    expression: restrained
+  热血激昂:
+    intensity: high
+    emotion_range: wide
+    expression: explosive
+  轻松搞笑:
+    intensity: low
+    emotion_range: medium
+    expression: humorous
+  严肃正经:
+    intensity: medium
+    emotion_range: narrow
+    expression: formal
+
+shift_rules:
+  tone_change_allowed_within_arc: false
+  arc_start_fixed_tone: true

@@ -1,0 +1,16 @@
+style_system:
+  enforce_global_consistency: true
+  allow_character_variation: true
+  enforce_on_every_chapter: true
+
+rules:
+  narrative_must_consistent: true
+  dialogue_must_distinct: true
+  action_must_clear: true
+  emotion_must_match_tone: true
+  pacing_must_follow_stage: true
+
+consistency_check:
+  check_on_write: true
+  check_on_arc_complete: true
+  threshold: 0.8

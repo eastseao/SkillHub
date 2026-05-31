@@ -1,0 +1,5 @@
+qc:
+  min_chinese_chars: 3500
+  require_hook: true
+  require_plot_progress: true
+  require_tension: true

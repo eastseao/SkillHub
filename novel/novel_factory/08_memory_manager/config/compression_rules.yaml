@@ -1,0 +1,26 @@
+compression:
+  enabled: true
+  keep_key_events: true
+  merge_minor_events: true
+  remove_redundant_descriptions: true
+
+compression_rules:
+  before_compression:
+    - 备份当前版本
+    - 记录压缩点
+
+  during_compression:
+    - 提取关键事件
+    - 合并同类事件
+    - 删除重复描述
+    - 保留因果链
+
+  after_compression:
+    - 验证因果链完整
+    - 验证关键信息保留
+    - 更新索引
+
+compression_threshold:
+  chapter_count: 50
+  file_size_mb: 10
+  event_count: 1000
