@@ -1,0 +1,31 @@
+style_mapping:
+  qidian:
+    sentence_length: long
+    description_density: high
+    world_building: extensive
+    emotion: restrained
+    conflict: gradual
+  fanqie:
+    sentence_length: short
+    description_density: low
+    world_building: minimal
+    emotion: explosive
+    conflict: immediate
+  jinjiang:
+    sentence_length: medium
+    description_density: medium
+    world_building: moderate
+    emotion: intense
+    conflict: subtle
+  webnovel:
+    sentence_length: medium_short
+    description_density: medium_low
+    world_building: moderate
+    emotion: moderate
+    conflict: clear
+  short:
+    sentence_length: very_short
+    description_density: minimal
+    world_building: none
+    emotion: peak
+    conflict: instant

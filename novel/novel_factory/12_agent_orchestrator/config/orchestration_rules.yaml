@@ -1,0 +1,39 @@
+orchestration:
+  enable_dag: true
+  enable_parallel_execution: true
+  enable_auto_recovery: true
+  single_entry_point: true
+  dag_type: directed_acyclic_graph
+
+rules:
+  must_follow_dependency: true
+  qc_gate_required: true
+  memory_sync_required: true
+  no_agent_standalone: true
+
+phase_order:
+  phase_1:
+    - 01_world_builder
+    - 02_character_builder
+    - 03_power_system
+    - 04_faction_system
+  phase_2:
+    - 05_master_plot
+    - 06_arc_designer
+  phase_3:
+    - 07_chapter_engine
+  phase_4:
+    - 08_memory_manager
+    - 09_style_system
+  phase_5:
+    - 10_platform_adapter
+  phase_6:
+    - 11_quality_control
+  phase_7:
+    - 12_loop_control
+
+constraints:
+  max_parallel_agents: 3
+  max_retry_on_fail: 3
+  deadlock_timeout_seconds: 300
+  chapter_target_time_seconds: 300

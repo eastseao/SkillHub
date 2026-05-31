@@ -1,0 +1,32 @@
+priority_levels:
+  critical:
+    - 11_quality_control
+    - 08_memory_manager
+  high:
+    - 05_master_plot
+    - 06_arc_designer
+    - 07_chapter_engine
+  medium:
+    - 09_style_system
+    - 10_platform_adapter
+  low:
+    - 01_world_builder
+    - 02_character_builder
+    - 03_power_system
+    - 04_faction_system
+
+execution_priority:
+  - 11_quality_control  # QC最高优先级
+  - 08_memory_manager
+  - 07_chapter_engine
+  - 05_master_plot
+  - 06_arc_designer
+  - 09_style_system
+  - 10_platform_adapter
+  - 01_world_builder
+  - 02_character_builder
+  - 03_power_system
+  - 04_faction_system
+  - 12_loop_control
+
+rule: "QC_fail_blocks_all_lower_priority"

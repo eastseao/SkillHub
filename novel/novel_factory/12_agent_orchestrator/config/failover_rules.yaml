@@ -1,0 +1,49 @@
+failover:
+  qc_fail_retry: true
+  memory_conflict_fix: true
+  chapter_regenerate: true
+  deadlock_break: true
+  cascade_failure_stop: true
+
+retry_rules:
+  qc_fail:
+    max_attempts: 3
+    action: rollback_to_chapter_engine
+    backoff_seconds: 30
+
+  memory_conflict:
+    max_attempts: 2
+    action: sync_with_memory_manager
+    backoff_seconds: 10
+
+  deadlock:
+    max_attempts: 1
+    action: force_terminate_and_restart
+    backoff_seconds: 60
+
+  agent_timeout:
+    max_attempts: 2
+    action: terminate_and_retry
+    backoff_seconds: 15
+
+recovery_procedures:
+  rollback_to_chapter:
+    target_agent: 07_chapter_engine
+    restore_from: memory_manager
+    steps:
+      - 保存当前错误状态
+      - 恢复最近QC通过的章节状态
+      - 重新调用07生成
+      - 重新QC
+
+  full_pipeline_restart:
+    target_agent: 12_agent_orchestrator
+    restore_from: last_saved_checkpoint
+    steps:
+      - 保存当前错误状态
+      - 恢复checkpoint状态
+      - 重新执行全流水线
+
+escalation:
+  after_max_retries: manual_intervention_required
+  notify: true

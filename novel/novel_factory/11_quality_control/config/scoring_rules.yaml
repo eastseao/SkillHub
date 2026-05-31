@@ -1,0 +1,52 @@
+scoring:
+  total: 100
+
+dimensions:
+  plot_consistency: 25
+  character_consistency: 20
+  world_logic: 15
+  pacing_quality: 15
+  emotional_quality: 10
+  style_compliance: 10
+  engagement: 5
+
+pass_threshold:
+  publish_gate: 80
+  revision_needed: 70
+  auto_reject: below_70
+
+dimension_scoring:
+  plot_consistency:
+    full_marks: 符合主线，逻辑完整，无断裂
+    partial_marks: 基本符合，有小漏洞
+    no_marks: 逻辑断裂，严重偏离
+
+  character_consistency:
+    full_marks: 行为一致，无OOC
+    partial_marks: 基本一致，有轻微漂移
+    no_marks: 严重OOC，角色崩坏
+
+  world_logic:
+    full_marks: 法则一致，世界稳定
+    partial_marks: 基本一致，有小问题
+    no_marks: 世界崩坏，法则混乱
+
+  pacing_quality:
+    full_marks: 节奏合理，爽点充足
+    partial_marks: 基本合理，稍有拖沓
+    no_marks: 严重拖沓或过快
+
+  emotional_quality:
+    full_marks: 情绪起伏有效，爆点有力
+    partial_marks: 基本有效，稍显平淡
+    no_marks: 平淡无爆点
+
+  style_compliance:
+    full_marks: 完全符合风格要求
+    partial_marks: 基本符合，轻微漂移
+    no_marks: 严重漂移
+
+  engagement:
+    full_marks: 钩子强劲，留存率高
+    partial_marks: 基本有效
+    no_marks: 无留存吸引力

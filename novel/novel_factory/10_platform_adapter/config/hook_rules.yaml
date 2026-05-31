@@ -1,0 +1,35 @@
+hook_rules:
+  fanqie:
+    first_3_seconds: mandatory
+    hook_type: shock_conflict
+    ending_cliffhanger: mandatory
+    conflict_per_500_words: 1
+
+  qidian:
+    first_3_seconds: preferred
+    hook_type: intrigue_setup
+    ending_cliffhanger: preferred
+    conflict_per_1000_words: 1
+
+  jinjiang:
+    first_3_seconds: emotional
+    hook_type: feeling_establish
+    ending_cliffhanger: emotional_tension
+    conflict_per_1500_words: 1
+
+  webnovel:
+    first_3_seconds: clear_stakes
+    hook_type: direct_conflict
+    ending_cliffhanger: mandatory
+    conflict_per_800_words: 1
+
+  short:
+    first_3_seconds: extreme_shock
+    hook_type: immediate_impact
+    ending_cliffhanger: maximum_tension
+    conflict_per_200_words: 1
+
+enhancement_priority:
+  - 开头钩子
+  - 结尾钩子
+  - 中段冲突密度

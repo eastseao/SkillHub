@@ -1,0 +1,36 @@
+length_rules:
+  qidian:
+    chapter_length: 3000-5000
+    paragraph_length: 100-200
+    scene_transition: gradual
+
+  fanqie:
+    chapter_length: 1500-2500
+    paragraph_length: 50-100
+    scene_transition: rapid
+
+  jinjiang:
+    chapter_length: 2000-4000
+    paragraph_length: 80-150
+    scene_transition: smooth
+
+  webnovel:
+    chapter_length: 2000-3000
+    paragraph_length: 60-120
+    scene_transition: clear
+
+  short:
+    chapter_length: 500-1000
+    paragraph_length: 30-50
+    scene_transition: instant
+
+compression_rules:
+  fanqie:
+    description_reduction: 0.5
+    dialogue_reduction: 0.2
+    action_expansion: 1.5
+
+  short:
+    description_reduction: 0.8
+    dialogue_reduction: 0.5
+    action_expansion: 2.0

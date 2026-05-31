@@ -1,0 +1,26 @@
+qc_system:
+  auto_score: true
+  auto_reject_threshold: 70
+  publish_gate_threshold: 80
+
+rules:
+  must_check_plot: true
+  must_check_characters: true
+  must_check_world: true
+  must_check_style: true
+  must_check_pacing: true
+  must_check_emotion: true
+  must_check_water_content: true
+  must_check_hook: true
+  must_check_engagement: true
+
+rollback:
+  auto_rollback_on_fail: true
+  rollback_target: 07_chapter_engine
+  max_rewrite_attempts: 3
+
+severity_levels:
+  critical: 必须立即修复
+  high: 必须修复
+  medium: 建议修复
+  low: 可选修复

@@ -1,0 +1,27 @@
+thresholds:
+  publish_gate: 80
+  revision_needed: 70
+  auto_fail: 60
+
+dimension_thresholds:
+  plot_consistency: 15  # 25分中至少15
+  character_consistency: 12  # 20分中至少12
+  world_logic: 9  # 15分中至少9
+  pacing_quality: 9  # 15分中至少9
+  emotional_quality: 6  # 10分中至少6
+  style_compliance: 6  # 10分中至少6
+  engagement: 3  # 5分中至少3
+
+auto_fail_conditions:
+  - 剧情逻辑断裂
+  - 角色严重OOC
+  - 世界法则崩坏
+  - 战力体系崩溃
+  - 完全无钩子
+  - 水文比例 > 50%
+
+revision_conditions:
+  - 单项维度 < 60%
+  - 节奏严重拖沓
+  - 情绪平淡
+  - 风格轻微漂移

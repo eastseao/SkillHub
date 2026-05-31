@@ -1,0 +1,46 @@
+platforms:
+  qidian:
+    name: 起点中文网
+    pacing: medium_slow
+    description: 长线铺垫，世界观完整
+    word_count_preferred: 3000-5000
+    conflict_density: medium
+    hook_strength: medium
+
+  fanqie:
+    name: 番茄小说
+    pacing: fast
+    description: 强钩子，高爽点密度
+    word_count_preferred: 1500-2500
+    conflict_density: high
+    hook_strength: very_high
+
+  jinjiang:
+    name: 晋江文学城
+    pacing: emotional
+    description: 情绪细腻，人物关系
+    word_count_preferred: 2000-4000
+    conflict_density: low_medium
+    hook_strength: medium
+
+  webnovel:
+    name: Webnovel (国际版)
+    pacing: clean
+    description: 国际化，简洁直接
+    word_count_preferred: 2000-3000
+    conflict_density: medium_high
+    hook_strength: high
+
+  short:
+    name: 短视频/公众号
+    pacing: explosive
+    description: 极度压缩，高冲击
+    word_count_preferred: 500-1000
+    conflict_density: very_high
+    hook_strength: extreme
+
+rules:
+  preserve_story: true
+  allow_style_change: true
+  allow_pacing_change: true
+  allow_hook_enhancement: true
